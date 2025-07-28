@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#root{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.registerForm{
+    height: 100%;
+    width: 100%;
+    background-image: url("./ecommercefrontend/asset/bgimage.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registerForm>form{
+/* background-color: red; */
+height: 70%;
+width: 30%;
+display: flex;
+flex-direction: column;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center center;
+gap: 20px;
+padding: 30px 50px;
+backdrop-filter: blur(8px);
+border: 3px solid #efefef;
+border-radius: 10px;
+overflow-y: scroll;
+}
+.registerForm>form>div{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    padding: 0px 8px;
+    border-bottom: 3px solid #111;
+}
+.registerForm>form>div:first-child,.registerForm>form>div:nth-child(7),.registerForm>form>div:last-child{
+border: none
+}
+.registerForm>form>div>input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 2px 5px;
+    outline: none;
+    font-size: 15px;
+}
+.registerForm>form>div>input::placeholder,.registerForm>form>div>textarea::placeholder{
+    color: #111;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.registerForm>form>div>span{
+    display: flex;
+}
+
+.registerForm>form>div>textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 2px 5px;
+    outline: none;
+}
+.registerForm>form>div:last-child{
+    padding: 0px ;
+}
+.registerForm>form>div>button{
+    width: 40%;
+    height: 100%;
+    border: none;
+    background-color: #111;
+    color: #efefef;
+    border-radius: 10px;
+    font-size: 15px;
+
+}
+
+.registerForm>form>div>input[type="file"]::file-selector-button{
+    width: 60%;
+    height: 100%;
+    background-color: #111;
+    color: #efefef;
+    border-radius: 5px;
+    border: none;
+}
+
+.registerForm>.login{
+   height: 40%; 
+}
+
+@media screen and (max-width:1260px) {
+    .registerForm>form{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .registerForm>form{
+        width: 80%;
+    }
+        .registerForm>form>div>input[type="file"]::file-selector-button{
+        width: 40%;
+    }
+}
