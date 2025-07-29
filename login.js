@@ -23,8 +23,6 @@ const login=()=>{
         </div>
     </form>
 </div>
-
-    
     `
 }
 

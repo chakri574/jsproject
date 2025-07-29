@@ -16,7 +16,7 @@ const register=()=>{
             <span><i class="fa-solid fa-envelope"></i></span>
         </div>
         <div>
-            <input type="password" name="password" placeholder="password">
+            <input type="password" name="password" placeholder="password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,}$">
             <span><i class="fa-solid fa-key"></i></span>
         </div>
          <div>
